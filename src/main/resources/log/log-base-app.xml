@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+	<include resource="log/appender-app.xml" />
+
+
+	<logger level="DEBUG" name="org.springframework.web" />
+	<logger level="DEBUG" name=" com.example.simplesms" />
+	<logger level="TRACE" name="org.hibernate.type.descriptor.sql.BasicBinder" />
+	<logger level="DEBUG" name="org.springframework.security" />
+
+	<root level="DEBUG">
+		<appender-ref ref="APPLICATION" />
+	</root>
+</included>

@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: local # default profile
+    group:
+      local:
+        - db-local
+        - redis-local
+        - security-local
+        - file
+      prod:
+        - db-prod
+        - redis-local
+        - security-prod
+        - s3
+    include:
+      - db
+      - security
+      - s3
+      - file
+      - oauth2
+      - redis
+
+

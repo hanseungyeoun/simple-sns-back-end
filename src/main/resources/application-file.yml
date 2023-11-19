@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: file
+
+download-path: D:\download\
+image-server-url: http://localhost:8080/images/
+cloud:
+  aws:
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false

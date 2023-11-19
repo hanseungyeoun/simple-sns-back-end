@@ -1,0 +1,29 @@
+spring:
+  config:
+    activate:
+      on-profile: "security-local"
+app:
+  token:
+    accessTokenSecret: ${JWT_ACCESS_TOKEN_SECRET}
+    accessTokenExpirationMsec: ${JWT_ACCESS_TOKEN_EXPIRATION_MSEC}
+  oauth2:
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
+      - myandroidapp://oauth2/redirect
+      - myiosapp://oauth2/redirect
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "security-prod"
+
+app:
+  token:
+    accessTokenSecret: ${JWT_ACCESS_TOKEN_SECRET}
+    accessTokenExpirationMsec: ${JWT_ACCESS_TOKEN_EXPIRATION_MSEC}
+  oauth2:
+    authorizedRedirectUris:
+      - http://localhost:80/oauth2/redirect
+      - myandroidapp://oauth2/redirect
+      - myiosapp://oauth2/redirect

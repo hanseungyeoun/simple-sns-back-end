@@ -1,0 +1,53 @@
+#default 공통설정
+spring:
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false
+    properties:
+      hibernate.format_sql: true
+      hibernate.show_sql: true
+      hibernate.default_fetch_size: ${chunkSize:100}
+      hibernate.connection.provider_disables_autocommit: true
+      hibernate.jdbc.batch_size: ${chunkSize:100}
+      hibernate.order_inserts: true
+      hibernate.order_updates: true
+---
+spring:
+  config:
+    activate:
+      on-profile: "db-local"
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/test?characterEncoding=UTF-8&serverTimezone=UTC
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
+  redis:
+    host: localhost
+    port: 6379
+---
+spring:
+  config:
+    activate:
+      on-profile: "db-prod"
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://simple-sms-database:3306/simple-sms?characterEncoding=UTF-8&serverTimezone=UTC
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  redis:
+    host: localhost
+    port: 6379

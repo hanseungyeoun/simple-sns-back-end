@@ -1,0 +1,22 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "redis-local"
+  redis:
+    host: localhost
+    port: 6379
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "prod-prod"
+    redis:
+      host: simple-sms-redis
+      port: 6379
