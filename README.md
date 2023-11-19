@@ -25,6 +25,10 @@ Backend
 
 ![Untitled](./image/system.png)
 
+### 유즈케이스 다이어그램
+
+![Untitled](./image/user-case.png)
+
 ### **ERD**
 
 ![Untitled](./image/erd.png)
@@ -42,7 +46,7 @@ Backend
    환경 변수 목록
 
    | environment                      | description                      |
-      | -------------------------------- | -------------------------------- |
+               | -------------------------------- | -------------------------------- |
    | SPRING_PROFILES_ACTIVE           | profile 값 “prod” 지정           |
    | SPRING_DATASOURCE_USERNAME       | db 접속 계정                     |
    | SPRING_DATASOURCE_PASSWORD       | db 비밀 번호                     |
