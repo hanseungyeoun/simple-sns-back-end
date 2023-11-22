@@ -21,9 +21,11 @@ Backend
 
 ---
 
-### 시스템 구조
+[//]: # (### 시스템 구조)
 
-![Untitled](./image/system.png)
+[//]: # ()
+
+[//]: # (![Untitled]&#40;./image/system.png&#41;)
 
 ### 유즈케이스 다이어그램
 
