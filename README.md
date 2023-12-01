@@ -2,7 +2,7 @@
 
 간단한 Post 등록/수정/삭제, 댓글, 좋아요, SNS 간단 로그인 기능이 있는 간단한 SNS Backend 프로젝트
 
-## FrontEnd Githut 주소
+## FrontEnd Github 주소
 
 [https://github.com/hanseungyeoun/simple-sms-front-end](https://github.com/hanseungyeoun/simple-sms-front-end)
 
@@ -48,7 +48,7 @@ Backend
    환경 변수 목록
 
    | environment                      | description                      |
-            | -------------------------------- | -------------------------------- |
+   | -------------------------------- | -------------------------------- |
    | SPRING_PROFILES_ACTIVE           | profile 값 “prod” 지정           |
    | SPRING_DATASOURCE_USERNAME       | db 접속 계정                     |
    | SPRING_DATASOURCE_PASSWORD       | db 비밀 번호                     |
