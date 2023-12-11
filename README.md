@@ -54,12 +54,12 @@ Backend
    | SPRING_DATASOURCE_PASSWORD       | db 비밀 번호                     |
    | GOOGLE_CLIENT_ID                 | Google Oauth Client Id           |
    | GOOGLE_CLIENT_SECRET             | Google Oauth Secret Id           |
-   | KAKAO_CLIENT_ID                  | Google Oauth Client Id           |
-   | KAKAO_CLIENT_SECRET              | Google Oauth Secret Id           |
-   | NAVER_CLIENT_ID                  | Google Oauth Client Id           |
-   | NAVER_CLIENT_SECRET              | Google Oauth Secret Id           |
-   | AWS_S3_ACCESS_KEY                | AWS에 접근하기 위한 ACCESS_KEY   |
-   | AWS_S3_SECRET_KEY                | AWS에 접근하기 위한 SECRET_KEY   |
+   | KAKAO_CLIENT_ID                  | Kakao Oauth Client Id           |
+   | KAKAO_CLIENT_SECRET              | Kakao Oauth Secret Id           |
+   | NAVER_CLIENT_ID                  | Naver Oauth Client Id           |
+   | NAVER_CLIENT_SECRET              | Naver Oauth Secret Id           |
+   | AWS_S3_ACCESS_KEY                | AWS S3에 접근하기 위한 ACCESS_KEY   |
+   | AWS_S3_SECRET_KEY                | AWS S3에 접근하기 위한 SECRET_KEY   |
    | AWS_S3_BUCKET                    | S3 버킷명                        |
    | AWS_S3_DIR                       | S3 버킷 폴더명                   |
    | AWS_S3_REGION                    | S3 Region                        |
