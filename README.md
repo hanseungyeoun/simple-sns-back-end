@@ -4,7 +4,7 @@
 
 ## FrontEnd Github 주소
 
-[https://github.com/hanseungyeoun/simple-sms-front-end](https://github.com/hanseungyeoun/simple-sms-front-end)
+[https://github.com/hanseungyeoun/simple-sns-front-end](https://github.com/hanseungyeoun/simple-sms-front-end)
 
 ## 개발 언어및 활용기술
 
